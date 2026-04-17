@@ -8,7 +8,6 @@ GET / - "Backend server running"
 
 GET /status - { status: "running", message: "Server is active" }
 
-GET /health - { uptime: ..., timestamp: ... } 
 
 
 
