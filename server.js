@@ -21,16 +21,6 @@ app.get("/status", (req, res) => {
   });
 });
 
-app.get("/health", (req, res) => {
-  res.status(200).json({
-    success: true,
-    message: "Health check passed",
-    data: {
-      uptime: process.uptime(),
-      timestamp: Date.now(),
-    },
-  });
-});
 
 app.use((req, res) => {
   res.status(404).json({
